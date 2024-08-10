@@ -1,0 +1,413 @@
+@font-face {
+  font-family: "Alegreya";
+  src: url(fonts/Alegreya-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alegreya";
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0, 0%, 20%);
+  max-height: 70px;
+  z-index: 10;
+}
+.logo {
+  margin: 15px 0 15px 120px;
+}
+.logo img {
+  width: 140px;
+}
+.nav-items {
+  display: flex;
+  margin-right: 120px;
+}
+
+.navbar a {
+  margin: 10px 15px 10px 10px;
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  text-decoration: none;
+}
+.section-1 {
+  min-height: 100vh;
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2)),
+    url(images/drew-coffman-1872.jpg);
+  background-repeat: no-repeat;
+  background-position: center 38%;
+  background-size: cover;
+
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.section-1-texts {
+  color: white;
+  position: absolute;
+  width: 50%;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+.section-1-texts p {
+  font-size: 18px;
+  margin: 15px;
+}
+.section-1-texts {
+  font-size: 40px;
+}
+.section-1-texts a {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.Learn {
+  background-color: #8e7754;
+  border: #8e7754 2px solid;
+  transition: 0.3s;
+}
+.Contact {
+  background-color: transparent;
+  border: 2px solid white;
+  transition: 0.3s;
+}
+
+.Learn:hover,
+.Contact:hover {
+  background-color: white;
+  color: black;
+}
+.section-2 {
+  width: 90%;
+}
+.section-2 img {
+  width: 450px;
+  margin: 80px 30px 10px 120px;
+  float: left;
+}
+.section-2-texts {
+  position: relative;
+  top: 120px;
+  left: 50px;
+}
+.section-2 h2 {
+  font-size: 25px;
+  font-weight: lighter;
+  margin-bottom: 30px;
+}
+.section-2 p {
+  font-size: 14px;
+  margin-bottom: 40px;
+  width: 90%;
+  color: hsl(0, 0%, 40%);
+}
+
+.section-2-icons i {
+  border: 1px solid hsl(0, 0%, 50%);
+  padding: 10px;
+  border-radius: 50%;
+  height: fit-content;
+  margin-right: 10px;
+  color: #8e7754;
+}
+.icon {
+  margin-bottom: 15px;
+}
+.icon label {
+  color: hsl(0, 0%, 50%);
+  font-size: 16px;
+}
+.section-3 {
+  background-color: hsl(0, 0%, 95%);
+  width: 100%;
+  position: relative;
+  top: 200px;
+  height: 90vh;
+}
+.section-3 img {
+  width: 450px;
+  margin: 80px 120px 10px 30px;
+  float: right;
+}
+.section-3-texts {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  width: 40%;
+  margin-left: 80px;
+}
+.section-3 h2 {
+  font-size: 25px;
+  font-weight: lighter;
+  margin-bottom: 30px;
+}
+.section-3 p {
+  font-size: 14px;
+  margin-bottom: 40px;
+  width: 90%;
+  color: hsl(0, 0%, 40%);
+}
+.section-4 {
+  height: 90vh;
+  z-index: 3;
+}
+.container {
+  position: relative;
+  top: 18vh;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  padding: 10px;
+}
+.section-4-div1,
+.section-4-div2,
+.section-4-div3 {
+  width: 33.33%;
+  display: inline-block;
+  text-align: center;
+  margin: 0 20px;
+  color: hsl(0, 0%, 30%);
+}
+.section-4 div img {
+  width: 300px;
+  margin-bottom: 10px;
+}
+.section-4 p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.section-4-title {
+  text-align: center;
+  margin: 100px;
+  color: black;
+  display: block;
+  position: relative;
+  top: 35%;
+  font-size: 2em;
+  font-weight: lighter;
+}
+.section-4-description {
+  position: relative;
+  top: 17%;
+  text-align: center;
+  color: hsl(0, 0%, 50%);
+}
+.section-5 {
+  width: 100%;
+  background-color: hsl(0, 0%, 95%);
+  position: relative;
+  top: 200px;
+  height: 90vh;
+}
+.section-5 iframe {
+  width: 400px;
+  height: 400px;
+  margin: 70px 80px 10px 120px;
+  float: right;
+}
+.section-5-texts {
+  position: relative;
+  top: 100px;
+  left: 50px;
+  width: 50%;
+  margin-left: 40px;
+}
+.section-5 h2 {
+  font-size: 25px;
+  font-weight: lighter;
+  margin-bottom: 30px;
+}
+.section-5 p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  width: 90%;
+  color: hsl(0, 0%, 40%);
+}
+
+.section-5-icons i {
+  width: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  height: 35px;
+  margin-right: 10px;
+  color: #ffffff;
+  background-color: #8e7754;
+  text-align: center;
+  font-size: 1.1em;
+}
+.contact-icons {
+  margin-bottom: 15px;
+}
+.contact-icons label {
+  color: hsl(0, 0%, 50%);
+  font-size: 16px;
+}
+footer {
+  height: 60vh;
+  background-color: #403d38;
+  position: relative;
+  top: 36vh;
+}
+.first-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.first-footer div {
+  margin: 20px;
+}
+.about-footer {
+  width: 20%;
+  text-align: left;
+  color: hsl(0, 0%, 50%);
+}
+.about-footer h2 {
+  color: rgb(255, 255, 255);
+}
+.special-footer {
+  width: 20%;
+  text-align: left;
+  color: hsl(0, 0%, 50%);
+}
+.special-footer h2 {
+  color: rgb(255, 255, 255);
+}
+.special-footer li {
+  list-style: none;
+}
+.special-footer li::before {
+  content: "\f105";
+  font-family: FontAwesome;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid hsla(0, 0%, 39%, 0.468);
+  margin: 2px 0 10px 0;
+  padding: 0;
+}
+.hours-footer {
+  width: 20%;
+  text-align: left;
+  color: hsl(0, 0%, 50%);
+}
+.hours-footer h2 {
+  color: rgb(255, 255, 255);
+}
+.hours-footer li {
+  list-style: none;
+}
+.hours-footer li::before {
+  content: "\f105";
+  font-family: FontAwesome;
+}
+.contact-footer {
+  width: 20%;
+  text-align: left;
+  color: hsl(0, 0%, 50%);
+}
+.contact-footer h2 {
+  color: rgb(255, 255, 255);
+}
+.contact-footer li,
+.contact-footer a {
+  list-style: none;
+  text-decoration: none;
+  color: hsl(0, 0%, 50%);
+}
+.first-footer {
+  padding: 10px;
+}
+.first-footer h2 {
+  padding-top: 20px;
+  font-size: 1em;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+.first-footer p,
+.first-footer li,
+.first-footer label {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+.second-footer {
+  position: relative;
+  top: -5vh;
+  background-color: #353330;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.second-footer img {
+  width: 300px;
+  margin-bottom: 20px;
+}
+.second-footer p {
+  color: hsl(0, 0%, 50%);
+  font-size: 0.8em;
+}
+.footer-icons {
+  text-align: center;
+  margin-top: 30px;
+}
+.footer-icons a {
+  visibility: hidden;
+}
+.footer-icons i {
+  color: #8c8a86;
+  margin: 0 10px;
+  height: 30px;
+  width: 30px;
+  background-color: hsl(0, 0%, 40%);
+  border-radius: 50%;
+  padding: 8px 10px 20px 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer-icons :nth-child(1) {
+  padding-left: 9.5px;
+}
+.footer-icons :nth-child(2) {
+  padding-right: 8px;
+}
+
+.footer-icons :nth-child(3) {
+  padding-left: 8px;
+}
+.footer-icons :nth-child(4) {
+  padding-left: 8px;
+}
+.footer-icons :nth-child(1):hover {
+  background-color: #1877f2;
+  color: white;
+}
+.footer-icons :nth-child(2):hover {
+  background-color: #db4a39;
+  color: white;
+}
+.footer-icons :nth-child(3):hover {
+  background-color: #0077b5;
+  color: white;
+}
+.footer-icons :nth-child(4):hover {
+  background-color: #1da1f2;
+  color: white;
+}
